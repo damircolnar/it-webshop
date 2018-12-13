@@ -18,7 +18,7 @@ if(isset($searchQuery)) {
 		if($result->num_rows > 0) {
 			echo '<h1>Pronađeni proizvodi:</h1>';
 			while($results = $result->fetch_assoc()) { ?>
-				<a href="pogledajProizvod.php?id=<?php echo $results['id']; ?>" class="search-result"><?php echo $results['name'] . '<br>'; ?></a>
+				<a href="product.php?id=<?php echo $results['id']; ?>" class="search-result"><?php echo $results['name'] . '<br>'; ?></a>
 			<?php }
 		} else {
 			echo 'Nema nađenih proizvoda';
